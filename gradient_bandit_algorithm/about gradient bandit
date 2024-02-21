@@ -1,0 +1,5 @@
+we consider learning a numerical preference for each action a, which we denote Ht(a). 
+The larger the preference, the more often that action is taken, but the preference has no interpretation in terms of reward. 
+Only the relative preference of one action over another is important; if we add 1000 to all the action preferences there is no e↵ect on the action probabilities, which are determined according to a soft-max distribution (i.e., Gibbs or Boltzmann distribution) as follows:. eHt(a) .
+Pr{At =a} = Pkb=1 eHt(b) = πt(a), (2.11)
+where here we have also introduced a useful new notation, ⇡t(a), for the probability of taking action a at time t. Initially all action preferences are the same (e.g., H1(a) = 0, for all a) so that all actions have an equal probability of being selected.
